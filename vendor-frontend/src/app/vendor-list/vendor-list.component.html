@@ -1,0 +1,29 @@
+<h2>Vendor List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Vendor Name</td>
+            <td>Vendor EmailID</td>
+            <!-- <td>Vendor PhoneNo</td> -->
+            <td>Pay Rate</td>
+            <td>Prime Vendor/Implementation Partner</td>
+            <td>Client</td>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vendor of vendors">
+            <td> {{vendor.vendorName}} </td>
+            <td> {{vendor.vendorEmailid}} </td>
+            <!-- <td> {{vendor.vendorPhoneno}} </td> -->
+            <td> {{vendor.payRate}} </td>
+            <td> {{vendor.primeVendorName}} </td>
+            <td> {{vendor.clientName}} </td>
+            <td>
+                <button (click)="updateVendor(vendor.id)" class="btn btn-info">Update</button>
+                <button (click)="deleteVendor(vendor.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+                <button (click)="vendorDetails(vendor.id)" class="btn btn-info" style="margin-left: 10px">More Details</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

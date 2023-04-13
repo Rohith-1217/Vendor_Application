@@ -1,0 +1,40 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Update Vendor</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Vendor Name</label>
+            <input type="text" class="form-control" id="vendorName" [(ngModel)]="vendor.vendorName" name="vendorName">
+        </div>
+
+        <div class="form-group">
+            <label>Prime Vendor Name/Implementation Partner</label>
+            <input type="text" class="form-control" id="primeVendorName" [(ngModel)]="vendor.primeVendorName"
+                name="primeVendorName">
+        </div>
+
+        <div class="form-group">
+            <label>Client Name</label>
+            <input type="text" class="form-control" id="clientName" [(ngModel)]="vendor.clientName" name="clientName">
+        </div>
+        
+        <div class="form-group">
+            <label>Vendor PhoneNo</label>
+            <input type="text" class="form-control" id="vendorPhoneno" [(ngModel)]="vendor.vendorPhoneno"
+                name="vendorPhoneno">
+        </div>
+
+        <div class="form-group">
+            <label>Vendor EmailId</label>
+            <input type="text" class="form-control" id="vendorEmailid" [(ngModel)]="vendor.vendorEmailid"
+                name="vendorEmailid">
+        </div>
+
+        <div class="form-group">
+            <label>Vendor Pay Rate</label>
+            <input type="text" class="form-control" id="payRate" [(ngModel)]="vendor.payRate" name="payRate">
+        </div>
+
+        <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+</div>
+
